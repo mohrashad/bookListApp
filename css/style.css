@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.alert,
+input[type='submit'] {
+    font-style: 18px;
+    font-weight: 700;
+}

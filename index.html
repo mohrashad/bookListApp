@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookListApp</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <!-- start book app heading -->
+            <h1 class="display-4 text-center">
+                <i class="fas fa-book-open text-primary"></i>
+                My<span class="text-primary">Book</span>List
+            </h1>
+            <!-- end book app heading -->
+
+            <!-- start book search form -->
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input class="form-control" type="text" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input class="form-control" type="text" id="author">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN#</label>
+                    <input class="form-control" type="text" id="isbn">
+                </div>
+                <input class="btn btn-primary btn-block" type="submit" value="Add Book">
+            </form>
+            <!-- end book search book form -->
+
+            <!-- start books table -->
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book_list">
+
+                </tbody>
+            </table>
+            <!-- end books table -->
+        </div>
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
